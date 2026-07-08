@@ -53,3 +53,195 @@ section:nth-child(even){background:var(--bg-light)}
 .hero-buttons{flex-direction:column}
 .btn{width:100%}
 }
+/* ============================= */
+/* Smooth Website Animations */
+/* ============================= */
+
+*{
+    transition: all 0.3s ease;
+}
+
+/* Initial Hidden State */
+
+.animate{
+    opacity:0;
+    transform:translateY(60px);
+    transition:opacity .8s ease, transform .8s ease;
+}
+
+/* Show Animation */
+
+.animate.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Fade Left */
+
+.fade-left{
+    opacity:0;
+    transform:translateX(-70px);
+    transition:all .8s ease;
+}
+
+.fade-left.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Fade Right */
+
+.fade-right{
+    opacity:0;
+    transform:translateX(70px);
+    transition:all .8s ease;
+}
+
+.fade-right.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Zoom */
+
+.zoom{
+    opacity:0;
+    transform:scale(.8);
+    transition:all .8s ease;
+}
+
+.zoom.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* Hero Animation */
+
+.hero h1{
+    animation:slideDown 1s ease forwards;
+}
+
+.hero-subtitle{
+    animation:fadeUp 1.2s ease forwards;
+}
+
+.hero-description{
+    animation:fadeUp 1.4s ease forwards;
+}
+
+.hero-buttons{
+    animation:fadeUp 1.6s ease forwards;
+}
+
+@keyframes slideDown{
+
+0%{
+opacity:0;
+transform:translateY(-80px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(50px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Floating Icons */
+
+.expertise-item i,
+.education-icon{
+
+animation:floating 3s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* Card Hover */
+
+.expertise-item,
+.education-item,
+.experience-item,
+.skills-card{
+
+transition:.35s;
+
+}
+
+.expertise-item:hover,
+.education-item:hover,
+.experience-item:hover,
+.skills-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 45px rgba(220,38,38,.35);
+
+}
+
+/* Buttons */
+
+.btn{
+
+transition:.35s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* Navigation */
+
+.navbar{
+
+transition:.4s;
+
+}
+
+/* Contact Icons */
+
+.contact-method:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+}
+
+/* Section Title */
+
+.section-title{
+
+animation:fadeUp 1s ease;
+
+}
