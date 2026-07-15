@@ -288,3 +288,87 @@ animation:fadeUp 1s ease;
         transform: translateY(0px);
     }
 }
+/* Award Section */
+
+.award-card{
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+    margin-top:40px;
+    padding:25px;
+
+    background:#1a1a1a;
+
+    border:2px solid #e31b23;
+    border-radius:20px;
+
+    box-shadow:0 0 20px rgba(227,27,35,.25);
+}
+
+.award-image img{
+
+    width:160px;
+    height:auto;
+
+    border-radius:15px;
+
+    border:3px solid gold;
+
+    transition:.4s;
+}
+
+.award-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.award-content{
+
+    flex:1;
+
+}
+
+.award-content h3{
+
+    color:#FFD700;
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.award-content p{
+
+    color:#d6d6d6;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+@media (max-width:768px){
+
+.award-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.award-image img{
+
+    width:130px;
+
+}
+
+.award-content h3{
+
+    font-size:24px;
+
+}
+
+}
