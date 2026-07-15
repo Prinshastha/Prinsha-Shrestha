@@ -307,23 +307,12 @@ animation:fadeUp 1s ease;
     padding:30px;
 
 }
-
 .award-image{
-
-    flex:0 0 300px;
-
+    flex:0 0 180px;
 }
-
 .award-image img{
-
-    width:100%;
-
-    border-radius:20px;
-
-    border:4px solid #d4af37;
-
-    box-shadow:0 0 25px rgba(255,215,0,.35);
-
+    width:180px;
+    height:auto;
 }
 
 .award-text{
